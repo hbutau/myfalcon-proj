@@ -1,5 +1,4 @@
 import json
-import logging
 
 import falcon
 from marshmallow import Schema
@@ -8,10 +7,8 @@ from marshmallow.exceptions import ValidationError
 from serializers import PersonSchema
 from models import Person
 from main import APP
+from log import logger
 
-logging.basicConfig(filename='myproject.log', level=logging.DEBUG)
-logger = logging.getLogger()
-# logger.setLevel(logging.DEBUG)
 
 person_data = {}
 munhu = Person('Humphrey', 34, 'african')
