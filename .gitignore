@@ -2,3 +2,4 @@ app.sublime-workspace
 __cache__/
 *.pyc
 
+myproject.log

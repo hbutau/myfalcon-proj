@@ -2,3 +2,5 @@ INFO:root:MarshalResult(data={'name': 'Humphrey', 'age': 34, 'race': 'african'},
 INFO:root:MarshalResult(data={'name': 'Humphrey', 'age': 34, 'race': 'african'}, errors={})
 INFO:root:****STARTING THE FALCON SERVER****
 INFO:root:MarshalResult(data={'age': 34, 'name': 'Humphrey', 'race': 'african'}, errors={})
+INFO:root:****STARTING THE FALCON SERVER****
+INFO:root:MarshalResult(data={'age': 34, 'race': 'african', 'name': 'Humphrey'}, errors={})

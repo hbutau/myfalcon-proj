@@ -2,8 +2,7 @@ import logging
 
 from falcon import API
 
-logging.basicConfig(filename='myproject.log', level=logging.DEBUG)
-logger = logging.getLogger()
+from log import logger
 
 class APP(API):
     """This class is the main entry point into a Falcon-based app."""
