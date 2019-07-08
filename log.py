@@ -1,6 +1,7 @@
 import logging
 
+logging.basicConfig(format='%(asctime)s %(message)s', filename='myproject.log', filemode='w',  level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-logging.basicConfig(filename='myproject.log', filemode='w',  level=logging.DEBUG)
-logger = logging.getLogger()
-
+def getlogger():
+    return logger

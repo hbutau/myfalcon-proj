@@ -2,13 +2,13 @@ import logging
 
 from falcon import API
 
-from log import logger
+import log
 
 class APP(API):
     """This class is the main entry point into a Falcon-based app."""
 
     def __init__(self, *args, **kwargs):
-        logger.info('****STARTING THE FALCON SERVER****')
+        logging.info('****INITIALIZING THE FALCON APP****')
         super().__init__(*args, **kwargs)
             # self._sinks = []
             # self._media_type = media_type

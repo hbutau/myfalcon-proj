@@ -1,14 +1,14 @@
 import json
+import logging
 
 import falcon
 from marshmallow import Schema
 from marshmallow.exceptions import ValidationError
 
+import log
 from serializers import PersonSchema
 from models import Person
 from main import APP
-from log import logger
-
 
 person_data = {}
 munhu = Person('Humphrey', 34, 'african')
@@ -29,7 +29,7 @@ class PersonResource(object):
         # here we need to serialize person
         schema = PersonSchema()
         result = schema.dump(munhu)
-        logger.info(result)
+        logging.info(result)
         resp.media = result
         resp.status = falcon.HTTP_200
 
